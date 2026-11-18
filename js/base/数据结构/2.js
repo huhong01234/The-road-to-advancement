@@ -12,5 +12,5 @@ let obj={
 console.log(obj.like.sport)
 
 let arr=[1,2,3,4,5,"胡宏",true,{q:12}]//有序且连续
-arr.push(null)
+arr.push(null)//在数组末尾添加一个元素
 console.log(arr)

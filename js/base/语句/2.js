@@ -13,9 +13,12 @@
 
 
 
-let arr=['a','b','c','d']
-let res=[]
-for(let i=0;i<arr.length;i++){
-    res.push(arr[i]+'o')
-}
-console.log(res)
+// let arr=['a','b','c','d']
+// let res=[]
+// for(let i=0;i<arr.length;i++){
+//     res.push(arr[i]+'o')
+// }
+// console.log(res)
+
+
+
