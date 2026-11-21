@@ -12,4 +12,4 @@ var twoSum = function(nums, target) {
 console.log(twoSum(nums, target));
 
 //O(n^2) 时间复杂度
-//O(1) 空间复杂度
+//O(1) 空间复杂度  常量  

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+  <main class="page">
+    <div class="brand">译界 <small>在线翻译</small></div>
+
+    <div class="card" id="card">
+      <section class="col col-input">
+        <div class="col-head">
+          <select class="select" id="source" aria-label="源语言">
+            <option value="auto" selected>自动检测</option>
+            <option value="zh-CN">中文（简体）</option>
+            <option value="zh-TW">中文（繁体）</option>
+            <option value="en">英语</option>
+            <option value="ja">日语</option>
+            <option value="ko">韩语</option>
+            <option value="fr">法语</option>
+            <option value="de">德语</option>
+            <option value="es">西班牙语</option>
+            <option value="ru">俄语</option>
+            <option value="pt">葡萄牙语</option>
+            <option value="it">意大利语</option>
+            <option value="ar">阿拉伯语</option>
+          </select>
+        </div>
+        <textarea id="input" placeholder="输入要翻译的内容" dir="auto" maxlength="2000" aria-label="输入内容"></textarea>
+        <footer class="col-foot">
+          <span id="charCount">0 / 2000</span>
+          <button class="link-btn" id="clear" type="button">清空</button>
+        </footer>
+      </section>
+
+      <button class="swap" id="swap" type="button" aria-label="交换语言" title="交换语言">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 16V4m0 0L3 8m4-4 4 4"/><path d="M17 8v12m0 0 4-4m-4 4-4-4"/></svg>
+      </button>
+
+      <section class="col col-output">
+        <div class="col-head">
+          <select class="select" id="target" aria-label="目标语言">
+            <option value="zh-CN">中文（简体）</option>
+            <option value="zh-TW">中文（繁体）</option>
+            <option value="英语" >英语</option>
+            <option value="日语">日语</option>
+            <option value="韩语">韩语</option>
+            <option value="法语">法语</option>
+            <option value="德语">德语</option>
+            <option value="西班牙语">西班牙语</option>
+            <option value="俄语">俄语</option>
+            <option value="葡萄牙语">葡萄牙语</option>
+            <option value="意大利语">意大利语</option>
+            <option value="阿拉伯语">阿拉伯语</option>
+          </select>
+        </div>
+        <div class="result" id="result" dir="auto" aria-live="polite"><span class="placeholder">翻译结果</span></div>
+        <footer class="col-foot">
+          <span id="status"></span>
+          <button class="link-btn" id="copyBtn" type="button" disabled>复制</button>
+        </footer>
+      </section>
+    </div>
+
+    <div class="actions">
+      <button class="primary" id="translate" type="button">翻译</button>
+    </div>
+  </main>
+
+<script src="./index.js"></script>
+
+
+</body>
+</html>
