@@ -21,6 +21,6 @@ let obj = {
     a:1,
 };
 function foo(){
-    console.log(this.a);
+    console.log(this.a);//1
 }
-foo.call(obj);
+foo.mycall(obj);
